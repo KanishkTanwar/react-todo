@@ -1,0 +1,82 @@
+.card{
+    background-color: var(--white);
+    width: 50vw;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+    margin-bottom: 3rem;
+    padding: 3rem;
+    cursor:pointer;
+    transition: all .3s ease;
+    animation: moveInLeft 1s ease-out;
+}
+
+.card__title{
+    font-size: 2.6rem;
+    background-image: linear-gradient(to top, var(--purple), var(--pink));
+    margin-bottom: 3rem;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.card:hover{
+    transform:scale(1.1, 1.1);
+    box-shadow: 0 2rem 3rem rgba(0,0,0,.4);
+}
+
+.card__description{
+    font-size: 1.4rem;
+}
+
+.card__link,
+.card__link:link,
+.card__link:visited{
+    margin-top:1rem;
+    text-decoration: none;
+    color:var(--purple);
+    font-size: 1.6rem;
+    display: inline-block;
+    border-radius: 3px;
+    border: none;
+    font-family: 'Gluten', cursive;
+    background-color: var(--white);
+    cursor: pointer;
+    transition: all .3s;
+}
+
+.card__link:hover{
+    background-color: var(--purple);
+    border-bottom: 3px solid var(--purple);
+    color:var(--white);
+}
+@media only screen and (max-width: 460px) {
+    .card{
+        width: 100vw;
+    }
+}
+
+.card__delete {
+    float:right;
+    font-size: 1.6rem;
+    color:var(--orange);
+    transition: all .3s;
+}
+
+.card__delete:hover {
+    transform:scale(1.5);
+}
+
+@keyframes moveInLeft {
+    0%{
+        opacity: 0;
+        transform: translateX(20rem);
+    }
+
+    90%{
+        transform: translateX(-5rem);
+    }
+
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}

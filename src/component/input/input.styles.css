@@ -1,0 +1,19 @@
+.home__input{
+    padding: 2rem 2.5rem;
+    width: 50vw;
+    font-family: 'Gluten', cursive;
+    border:none;
+    border-bottom: 2px solid var(--black);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+}
+
+.home__input:focus{
+    outline: none;
+}
+
+@media only screen and (max-width: 460px) {
+    .home__input{
+        width: 100vw;
+    }
+}

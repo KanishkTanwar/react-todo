@@ -1,0 +1,27 @@
+.home__button,
+.home__button:link,
+.home__button:visited{
+    padding: 2rem 4rem;
+    text-decoration: none;
+    background-color:var(--purple);
+    color: var(--white);
+    font-size: 2rem;
+    border-radius: 3px;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+    transition: all .3s;
+    cursor: pointer;
+}
+.home__button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 2rem 3rem rgba(0,0,0,.4);
+}
+
+.home__button:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 2rem 3rem rgba(0,0,0,.4);
+}
+
+.home__button:active{
+    transform: translateY(-1px);
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.4);
+}

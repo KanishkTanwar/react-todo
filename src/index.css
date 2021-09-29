@@ -1,0 +1,33 @@
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --black: #000;
+  --grey: #efefef;
+  --purple: #a18cd1;
+  --pink: #fbc2eb;
+  --orange: orange;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{
+  font-family: 'Gluten', cursive;
+  padding: 3rem;
+  line-height: 1.7rem;
+  background-image: linear-gradient(to top, var(--purple),var(--pink));
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+::selection{  
+  background-color:var(--pink);
+  color:var(--white);
+}
